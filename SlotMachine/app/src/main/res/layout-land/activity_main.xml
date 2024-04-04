@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="10dp"
+        android:background="@drawable/custom_pulsanti"
+        android:id="@+id/punteggioTotale"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lineasuperiore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/partecentrale"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/partecentrale"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+
+
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/position5"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/position6"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/position7"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineainferiore"
+        android:layout_below="@id/partecentrale"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:id="@+id/position8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="20dp" />
+
+
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/position9"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/position10"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@drawable/custom_rettangolo"
+            android:padding="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/position11"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/custom_pulsanti"
+            android:onClick="startpartita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/custom_pulsanti"
+            android:onClick="reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
