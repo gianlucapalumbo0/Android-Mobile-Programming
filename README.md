@@ -26,3 +26,4 @@
 24. PartitaRandom
 25. Telefonino
 26. ThreadAsyncTask
+27. SlotMachine
